@@ -17,6 +17,12 @@ body {
 }
 
 .background-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.left,
+.right {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -27,14 +33,12 @@ body {
 
 .left {
   left: 0;
-  background-image: url('img/quiz-time.png');
+  background-image: url('../img/quiz-time.png');
 }
 
 .right {
-  right: 0;
-  background-image: url('img\guy.png');
-  size-adjust: auto;
-  size-adjust: auto;
+  left: 0;
+  background-image: url('../img/guy.png');
 }
 
 .question-container {
