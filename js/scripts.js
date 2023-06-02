@@ -37,10 +37,14 @@ window.onload = function () {
       result = 'Swift';
     }
 
-    document.getElementById('survey-form').reset();
+    document.getElementById('result').style.display = "none";
+
+    document.getElementById('reult').innerText = "";
 
     document.getElementById('result').innerText = "We suggest you to learn about " + result + "!";
     document.getElementById("result").style.display = 'block';
+
+    document.getElementById('survey-form').reset();
   });
 
   document.getElementById('survey-form').addEventListener('reset', function () {

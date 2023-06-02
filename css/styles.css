@@ -37,11 +37,11 @@ body {
 }
 
 .right {
-  left: 0;
+  right: 0;
   background-image: url('../img/guy.png');
 }
 
-.question-container {
+.questionContainer {
   background-color: #193f5e;
   border: 2px solid #032b4c;
   padding: 20px;
