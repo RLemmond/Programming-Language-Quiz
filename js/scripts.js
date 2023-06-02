@@ -28,7 +28,14 @@ window.onload = function () {
     const mostFrequentTrack = Object.keys(trackFrequencies).reduce((a, b) => trackFrequencies[a] > trackFrequencies[b] ? a : b
     );
 
-
+    let result;
+    if (mostFrequentTrack === 'A') {
+      result = 'JavaScript';
+    } else if (mostFrequentTrack === 'B') {
+      result = 'Python';
+    } else if (mostFrequentTrack === 'C') {
+      result = 'Swift';
+    }
 
     document.getElementById('result').innerText = "We suggest you to learn about " + result + "!";
     document.getElementById("result").style.display = 'block';
