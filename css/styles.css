@@ -2,9 +2,11 @@ body {
   background-image: linear-gradient(to bottom, #84889e, #043c6b);
   color: #e8e8e8;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 .container {
+  position: relative;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
@@ -12,7 +14,27 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-weight: bold;
-  background-image: none;
+}
+
+.background-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.left {
+  left: 0;
+  background-image: url('img/quiz-time.png');
+}
+
+.right {
+  right: 0;
+  background-image: url('img\guy.png');
+  size-adjust: auto;
+  size-adjust: auto;
 }
 
 .question-container {
@@ -20,7 +42,7 @@ body {
   border: 2px solid #032b4c;
   padding: 20px;
   margin-bottom: 20px;
-  border-bottom: 0;
+  border-bottom: none;
 }
 
 label {
