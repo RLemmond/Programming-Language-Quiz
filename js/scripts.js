@@ -8,16 +8,28 @@ window.onload = function () {
     const answer4 = document.getElementById('question4').value.toLowerCase();
     const answer5 = document.getElementById('question5').value.toLowerCase();
 
-    let result;
-    if (answer1.includes("web")) {
-      result = "JavaScript";
-    } else if (answer1.includes('data')) {
-      result = "Python";
-    } else if (answer1.includes('mobile')) {
-      result = "Swift";
-    } else {
-      result = "Python";
-    }
+    const trackFrequencies = {
+      A: 0,
+      B: 0,
+      C: 0
+    };
+
+    const answers = [answer1, answer2, answer3, answer4, answer5];
+    answers.forEach(function (answer) {
+      if (answer === 'web') {
+        trackFrequencies.A++;
+      } else if (answer === 'data') {
+        trackFrequencies.B++;
+      } else if (answer === 'mobile') {
+        trackFrequencies.C++;
+      }
+    });
+
+    const mostFrequentTrack = Object.keys(trackFrequencies).reduce((a, b) => trackFrequencies[a] > trackFrequencies[b] ? a : b
+    );
+
+
+
     document.getElementById('result').innerText = "We suggest you to learn about " + result + "!";
     document.getElementById("result").style.display = 'block';
   });
