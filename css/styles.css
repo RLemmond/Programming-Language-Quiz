@@ -1,0 +1,12 @@
+body {
+  font-family: arial, sansrif;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+#result {
+  display: none;
+  margin-top: 20px;
+}
