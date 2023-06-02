@@ -10,7 +10,7 @@ _This project is a webpage dedicated to allowing the user to take a simple multi
 
 ## GitHub Page Link
 
-(ENTER HERE)
+(https://rlemmond.github.io/Programming-Language-Quiz/)
 
 
 ## Technologies Used
