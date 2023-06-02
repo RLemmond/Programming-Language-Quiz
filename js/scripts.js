@@ -37,6 +37,8 @@ window.onload = function () {
       result = 'Swift';
     }
 
+    document.getElementById('survey-form').reset();
+
     document.getElementById('result').innerText = "We suggest you to learn about " + result + "!";
     document.getElementById("result").style.display = 'block';
   });
