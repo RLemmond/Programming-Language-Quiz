@@ -25,7 +25,7 @@ window.onload = function () {
       }
     });
 
-    const mostFrequentTrack = Object.keys(trackFrequencies).reduce((a, b) => trackFrequencies[a] > trackFrequencies[b].a ? b
+    const mostFrequentTrack = Object.keys(trackFrequencies).reduce((a, b) => trackFrequencies[a] > trackFrequencies[b] ? a : b
     );
 
     let result;
