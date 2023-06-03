@@ -37,17 +37,15 @@ window.onload = function () {
       result = 'Swift';
     }
 
-    document.getElementById('result').style.display = "none";
-
-    document.getElementById('reult').innerText = "";
+    document.getElementById('survey-form').reset();
 
     document.getElementById('result').innerText = "We suggest you to learn about " + result + "!";
     document.getElementById("result").style.display = 'block';
-
-    document.getElementById('survey-form').reset();
+    setTimeout(() => this.reset(), 10000);
   });
 
   document.getElementById('survey-form').addEventListener('reset', function () {
+    document.getElementById('survey-form').reset();
     document.getElementById('result').style.display = 'none';
   });
-}
+};
