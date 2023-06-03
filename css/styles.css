@@ -1,4 +1,5 @@
 body {
+  position: relative;
   background-image: linear-gradient(to bottom, #84889e, #043c6b);
   color: #e8e8e8;
   font-family: Arial, Helvetica, sans-serif;
@@ -7,8 +8,8 @@ body {
 
 .container {
   position: relative;
-  max-width: 600px;
-  margin: 0 auto;
+  width: 60%;
+  margin-left: 20%;
   padding: 20px;
   background-color: #232229;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -26,33 +27,39 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 50%;
+  width: 20%;
   height: 100px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .left {
-  left: 100;
-  background-image: url('../img/quiz-time.png');
+  left: 0;
+  margin-top: 300px;
 }
 
 .right {
-  right: 1000;
-  background-image: url('../img/guy.png');
+  right: 0;
+  margin-top: 300px;
+}
+
+.left img,
+.right img {
+  width: 100%;
+  height: 100auto%;
+  object-fit: contain;
 }
 
 .questionContainer {
   background-color: #193f5e;
   border: 2px solid #032b4c;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-bottom: none;
+  padding: 80px;
+  margin-bottom: 20px auto;
 }
 
 label {
   font-size: 20px;
-  color: #ffffff;
+  color: #c964d6;
 }
 
 select {
@@ -80,4 +87,29 @@ select {
   color: #ffffff;
   font-size: 50px;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .left,
+  .right {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 80%;
+    margin-left: 10%;
+
+  }
+
+  .left,
+  .right {
+    display: none;
+  }
 }
