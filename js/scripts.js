@@ -41,10 +41,14 @@ window.onload = function () {
 
     document.getElementById('result').innerText = "We suggest you to learn about " + result + "!";
     document.getElementById("result").style.display = 'block';
-    setTimeout(() => this.reset(), 10000);
+
+    setTimeout(function () {
+      document.getElementById('result').style.display = 'none';
+      document.getElementById('survey-form').reset();
+    }, 10000);
   });
 
-  document.getElementById('survey-form').addEventListener('reset', function () {
+  document.getElementById('resetButton').addEventListener('click', function () {
     document.getElementById('survey-form').reset();
     document.getElementById('result').style.display = 'none';
   });
