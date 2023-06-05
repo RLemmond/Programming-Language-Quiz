@@ -1,5 +1,5 @@
 html {
-  height: 100%;
+  min-height: 100%;
   background-image: linear-gradient(to bottom, #84889e, #043c6b)
 }
 
@@ -12,7 +12,7 @@ body {
   position: relative;
   color: #e8e8e8;
   font-family: Arial, Helvetica, sans-serif;
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   background: transparent;
   background-repeat: no-repeat;
@@ -64,7 +64,7 @@ body {
 .questionContainer {
   background-color: #193f5e;
   border: 2px solid #032b4c;
-  padding: 80px;
+  padding: 40px;
   margin-bottom: 20px auto;
 }
 
@@ -75,8 +75,8 @@ label {
 
 select {
   width: 100%;
-  padding: 10px;
-  font-size: 14px;
+  padding: 8px;
+  font-size: 12px;
   margin-bottom: 15px;
 }
 
@@ -84,8 +84,8 @@ select {
   background-image: linear-gradient(to left, #000000, #043c6b);
   color: #ffffff;
   border: none;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 8px;
+  font-size: 14px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -102,8 +102,10 @@ select {
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
+    max-height: auto;
+    margin-left: 0;
+    padding: 10px
   }
 
   .left,
@@ -116,6 +118,7 @@ select {
 @media screen and (max-width: 320px) {
   .container {
     width: 80%;
+    height: auto;
     margin-left: 10%;
   }
 }
