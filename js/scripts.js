@@ -25,8 +25,9 @@ window.onload = function () {
       }
     });
 
-    const mostFrequentTrack = Object.keys(trackFrequencies).reduce((a, b) => trackFrequencies[a] > trackFrequencies[b] ? a : b
-    );
+    const mostFrequentTrack = Object.keys(trackFrequencies).reduce((a, b) => {
+      return trackFrequencies[a] > trackFrequencies[b] ? a : b;
+    });
 
     let result;
     if (mostFrequentTrack === 'A') {
@@ -45,7 +46,7 @@ window.onload = function () {
     setTimeout(function () {
       document.getElementById('result').style.display = 'none';
       document.getElementById('survey-form').reset();
-    }, 10000);
+    }, 15000);
   });
 
   document.getElementById('resetButton').addEventListener('click', function () {
