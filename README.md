@@ -5,13 +5,12 @@
 
 ## Description
 
-_This project is a webpage dedicated to allowing the user to take a simple multiple-choice quiz to find out which programming language they best match to. This quiz asks targeted questions to determine if the user is best suited for JavaScript, Python, or Swift. Upon taking the quiz the user is given their results and the quiz is rest to allow for alternate answers._
+_This project is a webpage dedicated to allowing the user to take a simple multiple-choice quiz to find out which programming language they best match to. This quiz asks targeted questions to determine if the user is best suited for JavaScript, Python, or Swift. Upon taking the quiz the user is given their results and the quiz is reset to allow for alternate answers._
 
 
 ## GitHub Page Link
 
 (https://rlemmond.github.io/Programming-Language-Quiz/)
-
 
 ## Technologies Used
 
